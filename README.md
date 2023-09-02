@@ -43,7 +43,7 @@ Open the intellij editor and follow through step by step
 
 ### Illustrated Usage Steps
 Here is a demonstration using WordPress to show how to integrate the plugin and print the executed SQL statements.
-![配置例子_en drawio](https://github.com/huangcong12/huangcong12.github.io/assets/2867782/4cd5bc5f-8a74-4594-a2f5-1b247e53d96c)
+![配置例子_en drawio](https://github.com/huangcong12/huangcong12.github.io/assets/2867782/c2f95656-4b81-434b-8487-a2b5242d9ac8)
 
 ## Usage Recommendations:
 - After the initial installation, you'll need to configure the remote MySQL's IP, port, and the local proxy listening port. Once configured, please check the "Start Proxy Service with Editor" option. This way, you won't need to start it manually in the future. For the initial installation, you'll need to manually click "Start 'Mysql Proxy Server'".
