@@ -40,7 +40,7 @@ php（使用预处理 pdo 操作数据库，发送数据的包未能完全解析
 
 ### 图示使用步骤
 下面以 WordPress 演示，怎么接入插件，并把执行的 SQL 打印出来
-![配置例子_zh drawio](https://github.com/huangcong12/huangcong12.github.io/assets/2867782/0cc8a701-5ca1-49a3-b493-e57b77dbcb66)
+![配置例子_zh drawio](https://github.com/huangcong12/huangcong12.github.io/assets/2867782/0fa8e732-b1d9-4c7c-9d3b-87a608f85bdf)
 
 ## 使用建议：
 - 首次安装完成，需要配置远程 MySQL 的 IP、端口和本地代理监听端口。配置完成后请勾选跟随编辑器启动，这样以后就不用手动启动了，首次安装完成需要手动点击运行
