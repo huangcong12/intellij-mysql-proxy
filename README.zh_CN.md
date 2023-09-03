@@ -22,7 +22,7 @@ java（待测试）：
 python:
 - django
 
-不太适合使用预处理执行 SQL 的框架：
+## 不太适合使用预处理执行 SQL 的框架：
 php（使用预处理 pdo 操作数据库，发送数据的包未能完全解析。类似下图，有一个包未能完全解析，并且没有和预处理 sql 合并）：
 ![图片](https://github.com/huangcong12/huangcong12.github.io/assets/2867782/7bb0714a-485a-4613-8828-45438c983fad)
 - Laravel
