@@ -57,11 +57,11 @@ A：可能原因：
 3、其他未知情况，如果上面两项都是正确配置，请把你的数据库版本、代码框架等信息提交给我们，我们如果排查到问题，会在下一个版本修复它。
 
 ### Q:我的 SQL 日志都是乱码，应该怎么解决
-A:数据库包被加密了，请在 MySQL 配置里增加 useSSL=false，如：jdbc:mysql://localhost:3309?useSSL=false
+A:数据库包被加密了。请给 MySQL 连接增加参数： useSSL=false，如：jdbc:mysql://localhost:3309?useSSL=false
 
 ### Q:支持什么版本的 MySQL？
-A:我们测试了 MySQL5.7、Mysql 8.0，应该所有使用 Mysql 协议的数据库都支持，比如：MariaDB、TIDB。
+A:我们测试了 MySQL5.7、Mysql 8.0 都可以，理论上所有使用 Mysql 协议的数据库都支持，比如：MariaDB、TIDB。
 
 ### Q:我使用自己研发的框架，可以支持吗？
-A:可以试一下，如果发现 sql 日志都是乱码，请增加参数： useSSL=false，如：jdbc:mysql://localhost:3309?useSSL=false。如果还不行，那可能是不支持。您可以把操作过程和结果反馈给我们，我们会在下个版本优化。
+A:建议您试一下，如果发现 sql 日志都是乱码，请增加参数： useSSL=false，如：jdbc:mysql://localhost:3309?useSSL=false。如果还不行，那可能是不支持。您可以把操作过程和结果反馈给我们，我们会在下个版本优化。
 
