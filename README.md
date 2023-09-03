@@ -26,7 +26,8 @@ Python:
 - Django
 
 ## Not well-suited for frameworks using SQL preprocessing:
-PHP (Utilizes PDO for prepared statement execution; complete packet parsing not supported):
+PHP (Utilizes PDO for prepared statement execution; complete packet parsing not supported.Similar to the diagram below, there is a packet that was not fully parsed and has not been merged with the prepared SQL.):
+![图片](https://github.com/huangcong12/huangcong12.github.io/assets/2867782/7bb0714a-485a-4613-8828-45438c983fad)
 - Laravel
 - ThinkPHP 6 (tp6)
 
