@@ -1,11 +1,13 @@
 ## intellij-mysql-proxy
-Tool for Monitoring Code Execution CRUD.
+Tool for monitoring code CRUD operations: helps you identify problematic SQL queries and optimize them.
 
 [中文文档](README.zh_CN.md)
 
 ![mysql_proxy_原理架构图](https://github.com/huangcong12/intellij-mysql-proxy/assets/2867782/d4d0358a-842a-4feb-9466-5193e43f9eb2)
 
-During the process of API development, whether it's troubleshooting or debugging, it's crucial to know which SQL statements have just been executed. While some modern frameworks make this information easily accessible, dealing with older frameworks can be quite cumbersome. This tool was born to address the challenge of quickly inspecting executed SQL statements within legacy frameworks. With its assistance, every SQL statement within older frameworks can be effortlessly revealed.
+In the development process, have you ever found yourself mostly focused on coding, dedicating less time and effort to database table creation, indexing, and SQL optimization? Perhaps you've thought that as long as the table relationships are clear, optimization can wait until the data volume increases. This approach is fine, but often, we forget about it until customers complain about system slowness.
+
+This tool is designed to address precisely this issue. By simply integrating your code with it, you can gain a clear view of all SQL execution records and their durations. You can easily identify which SQL operations can be replaced with caching mechanisms like Redis. When you encounter slow SQL queries, just select them, right-click, and choose an optimization tool (such as GPT or established vendors) to step-by-step improve them.
 
 # Feature Description
 ![使用说明_en drawio](https://github.com/huangcong12/intellij-mysql-proxy/assets/2867782/fb6e0318-645f-456e-9180-21c0de0ca642)
@@ -18,7 +20,8 @@ PHP:
 Go:
 - Frameworks using GORM (Tested with go-admin)
 
-Java (To be tested):
+Java 
+- Frameworks using Mybatis (Tested successfully with the open-source Spring Mybatis framework.)
 
 Python:
 - Django (Tested and passed).
@@ -39,12 +42,16 @@ Here is a demonstration using WordPress to show how to integrate the plugin and 
 ![配置例子_en drawio](https://github.com/huangcong12/huangcong12.github.io/assets/2867782/c2f95656-4b81-434b-8487-a2b5242d9ac8)
 
 ## Usage Recommendations:
-- After the initial installation, you'll need to configure the remote MySQL's IP, port, and the local proxy listening port. Once configured, please check the "Start Proxy Service with Editor" option. This way, you won't need to start it manually in the future. For the initial installation, you'll need to manually click "Start 'Mysql Proxy Server'".
+- Please check the "Start Proxy Service with Editor" option. This way, you won't need to start it manually in the future. 
 - If you don't need to view SQL logs temporarily, click the "Stop Recording SQL" switch. When needed, you can reopen the logging.
 - If the logged entries exceed 100,000, click the "Clear All Sql Log" button to restart logging from 1 and free up system resources.
 - If you wish to copy SQL, besides using Ctrl + C to copy the entire line, you can also right-click and choose "Copy SQL." If there are SQL statements you'd rather not see, you can right-click to delete them or add them to the filter table. Once added to the filter table, they will no longer appear unless you remove them from the filter table.
+- You can identify slow queries based on 'Duration.' When you wish to optimize them, select the query, right-click, and choose 'Optimize with OpenAI (Free GPT-3.5, Login Required)' or another optimization method. This way, you will receive professional optimization advice.
 
 ## FAQ:
+### Q: The framework I'm using already logs executed SQL statements, so I don't see much use for this plugin.
+A:It might depend on your specific needs. If you only want to know the SQL for a particular API request, then the built-in SQL execution logs of the framework should suffice. However, if you want to understand the SQL executed in more complex logic, such as a specific module or the entire project, then this plugin can be helpful. It can aggregate the information you need to focus on. Additionally, this plugin can serve as a kind of 'mirror' for some projects. Through SQL analysis, you can gain insights into the foundation of a project. Moreover, the plugin has SQL analysis capabilities, helping you collect information and jump to GPT analysis, saving you time and allowing you to work more efficiently.
+
 ### Q: I followed the documentation, configured everything, and started the proxy service, but I can't see the SQL logs.
 A: Possible reasons:
 - 1.The MySQL connection in your code might not have been adjusted to the proxy's address. Please double-check and try stopping the proxy service to see if your code can connect to the database.
