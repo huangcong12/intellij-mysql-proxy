@@ -1,5 +1,5 @@
 ## intellij-mysql-proxy
-[Tool for monitoring code CRUD](https://plugins.jetbrains.com/plugin/22655-mysql-proxy): helps you identify problematic SQL and assists you in optimizing it.
+[A plugin for IDEA](https://plugins.jetbrains.com/plugin/22655-mysql-proxy) that records code CRUD operations, helping you identify potential issues in SQL and providing optimization suggestions.
 
 [中文文档](README.zh_CN.md)
 

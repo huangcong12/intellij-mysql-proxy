@@ -1,5 +1,5 @@
 ## intellij-mysql-proxy
-监控代码 CRUD 的 [IDEA 插件](https://plugins.jetbrains.com/plugin/22655-mysql-proxy)：帮助您识别有问题的 SQL 并协助您优化它
+一个记录代码 CRUD 操作的 [IDEA 插件](https://plugins.jetbrains.com/plugin/22655-mysql-proxy)，帮助您识别潜在问题的 SQL 并提供优化建议。
 
 ![mysql_proxy_原理架构图](https://github.com/huangcong12/intellij-mysql-proxy/assets/2867782/d4d0358a-842a-4feb-9466-5193e43f9eb2)
 
