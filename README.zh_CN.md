@@ -6,7 +6,7 @@
 在开发需求的时候，不知道你是否也是这样：把大部分时间、精力都用在编码上，而在数据库建表、建立索引、调优 SQL 上花费的时间较少，并想着只要确保表关系清晰，优化的事情等数据量上来了再讨论也不迟。其实这种做法没问题，只是在这之后我们就忘了这回事，并在客户投诉系统慢了，我们才记起来。这个工具正是为协助解决这种问题而诞生的，只需要把代码接入它，就能清晰地看到所有 SQL 执行记录和耗时，也可轻松地看出哪些 SQL 操作是可以使用缓存（redis）代替。当你发现慢 SQL 时，只需要选中并右键，选择优化工具（GPT、老牌厂商等），一步一步优化它。
 
 ## 功能概览
-![使用说明_en drawio](https://image.baidu.com/search/down?url=https://tvax3.sinaimg.cn/large/8fe82a4egy1hix72ns1azj22dk282x6q.jpg)
+![使用说明_en drawio](https://github.com/huangcong12/intellij-mysql-proxy/assets/2867782/12e1a3bc-9741-4100-ab45-25f430cebe52)
 
 ## 适合的框架：
 PHP：

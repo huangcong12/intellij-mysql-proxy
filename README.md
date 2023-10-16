@@ -10,7 +10,7 @@ In the development process, have you ever found yourself mostly focused on codin
 This tool is designed to address precisely this issue. By simply integrating your code with it, you can gain a clear view of all SQL execution records and their durations. You can easily identify which SQL operations can be replaced with caching mechanisms like Redis. When you encounter slow SQL queries, just select them, right-click, and choose an optimization tool (such as GPT or established vendors) to step-by-step improve them.
 
 # Feature Description
-![使用说明_en drawio](https://image.baidu.com/search/down?url=https://tvax3.sinaimg.cn/large/8fe82a4egy1hix72ns1azj22dk282x6q.jpg)
+![使用说明_en drawio](https://github.com/huangcong12/intellij-mysql-proxy/assets/2867782/12e1a3bc-9741-4100-ab45-25f430cebe52)
 
 
 ## Suitable Frameworks:
