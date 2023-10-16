@@ -1,5 +1,5 @@
 ## intellij-mysql-proxy
-[A plugin for IDEA](https://plugins.jetbrains.com/plugin/22655-mysql-proxy) that records code CRUD operations, helping you identify potential issues in SQL and providing optimization suggestions.
+[An IntelliJ IDEA plugin](https://plugins.jetbrains.com/plugin/22655-mysql-proxy) that records code CRUD operations and assists you in identifying SQL queries with potential issues while providing optimization suggestions from GPT.
 
 [中文文档](README.zh_CN.md)
 
@@ -10,7 +10,7 @@ In the development process, have you ever found yourself mostly focused on codin
 This tool is designed to address precisely this issue. By simply integrating your code with it, you can gain a clear view of all SQL execution records and their durations. You can easily identify which SQL operations can be replaced with caching mechanisms like Redis. When you encounter slow SQL queries, just select them, right-click, and choose an optimization tool (such as GPT or established vendors) to step-by-step improve them.
 
 # Feature Description
-![使用说明_en drawio](https://github.com/huangcong12/intellij-mysql-proxy/assets/2867782/fb6e0318-645f-456e-9180-21c0de0ca642)
+![使用说明_en drawio](https://image.baidu.com/search/down?url=https://tvax3.sinaimg.cn/large/8fe82a4egy1hix72ns1azj22dk282x6q.jpg)
 
 
 ## Suitable Frameworks:
